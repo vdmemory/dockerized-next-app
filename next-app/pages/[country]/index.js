@@ -13,7 +13,7 @@ const Home = ({shows}) => {
         }, idx) => {
 
             return (
-                <li key={`name${idx}`}>
+                <li className="itemShow" key={`name${idx}`}>
                     <Thumbnail imageUrl={image.medium} caption={name}/>
                 </li>
             )
@@ -26,10 +26,15 @@ const Home = ({shows}) => {
         <style jsx>
                 {`
                     .tvshows {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
+                        display: grid;
                         list-style-type: none;
+                        grid-template-columns: repeat(6, 1fr);
+                        grid-gap: 10px;
+                        grid-auto-rows: minmax(100px, auto);
+                    }
+                    .itemShow {
+                        grid-column: 1;
+                        grid-row: 2 / 5;
                     }
                      
                 `}</style>

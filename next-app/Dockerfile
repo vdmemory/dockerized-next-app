@@ -7,4 +7,4 @@ COPY ./ ./
 RUN yarn build
 EXPOSE 3000
 
-CMD ["pm2-runtime", "start", "ecosystem.config.js"]
+CMD ["pm2-runtime", "npm", "--", "start"]

@@ -7,11 +7,15 @@ const Thumbnail = ({imageUrl, caption}) => {
             <style jsx>
                 {`
                     .thumbnail {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         border: 1px grey solid;
-                        margin-bottom: 5px;  
+                        padding-top: 15px;
+                        margin-bottom: 5px;
                     }
-                     .tumbnail_image {
-                        width: 100%;
+                     .thumbnail_image {
+                        width: 200px;
                     }
                     .thumnail_caption {
                         text-align: center;

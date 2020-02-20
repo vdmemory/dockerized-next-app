@@ -1,5 +1,5 @@
 
 
-const ShowDetails = () => <h1>Show Details</h1>;
+const ShowDetails = () => <h1>OPS....</h1>;
 
 export default ShowDetails;
