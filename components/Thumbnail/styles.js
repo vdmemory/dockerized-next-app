@@ -15,6 +15,6 @@ const ThumbnailStyles = css`
   .thumnail_caption {
     text-align: center;
   }
-`;
+`
 
 export default ThumbnailStyles;

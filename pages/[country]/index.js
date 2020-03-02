@@ -1,6 +1,8 @@
 import axios from "axios";
 
+// import ThumbnailWithSass from "../../components/ThumbnailWithSass";
 import Thumbnail from "../../components/Thumbnail";
+
 import TvshowStyles from "./styles";
 
 const Home = ({ shows }) => {
@@ -10,7 +12,10 @@ const Home = ({ shows }) => {
     return shows.map(({ show: { image, name } }, idx) => {
       return (
         <li className="itemShow" key={`name${idx}`}>
-          <Thumbnail imageUrl={image.medium} caption={name} />
+          <Thumbnail
+            imageUrl={(image && image.medium) || undefined}
+            caption={name}
+          />
         </li>
       );
     });

@@ -12,6 +12,6 @@ const TvshowStyles = css`
     grid-column: 1;
     grid-row: 2 / 5;
   }
-`;
+`
 
 export default TvshowStyles;
