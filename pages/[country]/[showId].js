@@ -1,5 +1,9 @@
-
-
-const ShowDetails = () => <h1>OPS....</h1>;
+const ShowDetails = () => {
+  return (
+    <div>
+      <h1>Default page..</h1>
+    </div>
+  );
+};
 
 export default ShowDetails;
