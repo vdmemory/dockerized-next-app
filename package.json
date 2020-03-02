@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -16,5 +17,8 @@
   },
   "plugins": [
     "styled-jsx/babel"
-  ]
+  ],
+  "devDependencies": {
+    "jest": "^25.1.0"
+  }
 }
