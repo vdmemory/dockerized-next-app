@@ -1,4 +1,5 @@
 import axios from "axios";
+import Link from "next/link";
 
 // import ThumbnailWithSass from "../../components/ThumbnailWithSass";
 import Thumbnail from "../../components/Thumbnail";
@@ -23,6 +24,9 @@ const Home = ({ shows }) => {
 
   return (
     <div>
+      <Link href="\about">
+        <a>About</a>
+      </Link>
       <ul className="tvshows">{renderShows()}</ul>
       <style jsx>{TvshowStyles}</style>
     </div>
